@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sua Página Inicial</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #donateButton {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <!-- Substitua pelo seu e-mail do PayPal -->
+        <input type="hidden" name="business" value="marceloissa1@gmail.com">
+        <input type="hidden" name="item_name" value="Doação">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="amount" value="1.00">
+        <button id="donateButton" type="submit">
+            <img src="tucano_galho.png" alt="Doar $1">
+        </button>
+    </form>
+</body>
+</html>
